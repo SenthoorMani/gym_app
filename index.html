@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <button onclick="navigateToHome()">Home</button>
+        <h1>Fitness Gym</h1>
+        
+    </header>
+
+    <!-- Opening Page -->
+    <div id="opening-page" class="page">
+        <!-- <div class="content"> -->
+            <img src="gym_logo.png" alt="Gym Logo" class="logo">
+            <h2 class="h2">Welcome to Fitness Gym</h2>
+            <div>
+                <button class="gender-button" onclick="navigateToPage('level-page')">
+                    <img src="men.png" alt="Male Icon"> MEN 
+                </button>
+                <button class="gender-button" onclick="navigateToPage('level-page')">WOMEN
+                    <!-- <img src="women.png" alt="Female Icon"> WOMEN -->
+                </button>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- Level Page -->
+    <div id="level-page" class="page hidden">
+        <h2>Select Your Fitness Level</h2>
+        <button class="level-button" onclick="navigateToPage('workouts-page')">Beginner</button>
+        <button class="level-button" onclick="navigateToPage('workouts-page')">Intermediate</button>
+        <button class="level-button" onclick="navigateToPage('workouts-page')">Pro</button>
+        <button class="back-button" onclick="navigateBack()">Back</button>
+    </div>
+
+    <!-- Workouts Page -->
+    <div id="workouts-page" class="page hidden">
+        <h2>Choose Your Workout</h2>
+        <button class="workout-button" onclick="navigateToPage('guide-page', 'push-ups')">Push-ups</button>
+        <button class="workout-button" onclick="navigateToPage('guide-page', 'squats')">Squats</button>
+        <button class="workout-button" onclick="navigateToPage('guide-page', 'plank')">Plank</button>
+        <button class="back-button" onclick="navigateBack()">Back</button>
+    </div>
+    
+    <!-- Workout Guide Page -->
+    <div id="guide-page" class="page hidden">
+        <h2 id="workout-title"></h2>
+        <img id="workout-image" src="" alt="Workout Image">
+        <p id="workout-description"></p>
+        <button class="back-button" onclick="navigateBack()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
