@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Application</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -17,14 +18,18 @@
     <!-- Opening Page -->
     <div id="opening-page" class="page">
         <!-- <div class="content"> -->
-            <img src="gym_logo.png" alt="Gym Logo" class="logo">
-            <h2 class="h2">Welcome to Fitness Gym</h2>
-            <div>
+            <div class="d-flex flex-column mb-3" style="align-items: center;">
+                <img src="./Images/gym_logo.png" alt="Gym Logo" class="logo">
+                <h2 class="h2">Welcome to Fitness Gym</h2>
+            </div>
+            <div class="d-flex justify-content-center gap-5">
                 <button class="gender-button" onclick="navigateToPage('level-page')">
-                    <img src="men.png" alt="Male Icon"> MEN 
+                    <img src="./Images/men.png" alt="Male Icon"> 
+                    <div >MEN</div>
                 </button>
-                <button class="gender-button" onclick="navigateToPage('level-page')">WOMEN
-                    <!-- <img src="women.png" alt="Female Icon"> WOMEN -->
+                <button class="gender-button" onclick="navigateToPage('level-page')">
+                    <img src="./Images/women.png" alt="Female Icon"> 
+                    <div> WOMEN</div>
                 </button>
             </div>
         <!-- </div> -->
@@ -36,7 +41,8 @@
         <button class="level-button" onclick="navigateToPage('workouts-page')">Beginner</button>
         <button class="level-button" onclick="navigateToPage('workouts-page')">Intermediate</button>
         <button class="level-button" onclick="navigateToPage('workouts-page')">Pro</button>
-        <button class="back-button" onclick="navigateBack()">Back</button>
+        <!-- <button class="back-button" onclick="navigateBack()">Back</button> -->
+        <br> <button class="back-button" onclick="navigateBack()">Back</button>  </br>
     </div>
 
     <!-- Workouts Page -->
@@ -45,15 +51,16 @@
         <button class="workout-button" onclick="navigateToPage('guide-page', 'push-ups')">Push-ups</button>
         <button class="workout-button" onclick="navigateToPage('guide-page', 'squats')">Squats</button>
         <button class="workout-button" onclick="navigateToPage('guide-page', 'plank')">Plank</button>
-        <button class="back-button" onclick="navigateBack()">Back</button>
+        <br> <button class="back-button" onclick="navigateBack()">Back</button>  </br>
     </div>
     
     <!-- Workout Guide Page -->
     <div id="guide-page" class="page hidden">
         <h2 id="workout-title"></h2>
-        <img id="workout-image" src="" alt="Workout Image">
+        <img id="workout-image" src="inclined dummble flys.gif" alt="Workout Image">
         <p id="workout-description"></p>
-        <button class="back-button" onclick="navigateBack()">Back</button>
+        <!-- <button class="back-button" onclick="navigateBack()">Back</button> -->
+        <br> <button class="back-button" onclick="navigateBack()">Back</button>  </br>
     </div>
 
     <script src="script.js"></script>
