@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Page Styling */
+.page {
+    padding: 20px;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000080;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #1A2A4D; /* Navy background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* text-align: center; */ 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-align: center;
+    padding-right: 40%;
+
+}
+
+/* Header Button Styling */
+header button {
+    padding: 10px 15px;
+    background-color: #ffffff; /* Light navy */
+    color: #000080;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    width: 100px;
+    height: 50px;
+}
+
+header button:hover {
+    background-color: #9e9e9e; /* Darker navy on hover */
+    font-weight: bold;
+}
+
+
+.logo{
+    width: 400px;
+    height: 400px;
+}
+
+.h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vw;
+    color: #000080;
+}
+
+/* Back Button Styling */
+.back-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #9e9e9e; /* Lighter navy gray */
+    border-radius: 5px;
+    color: #000080;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.back-button:hover {
+    background-color: #000080; /* Slightly darker navy gray */
+    color: white;
+    font-weight: bold;
+}
+
+/* Gender Button Image Styling */
+.gender-button img, .workout-button img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 30px;
+    margin-left: 20px;
+    
+}
+
+/* Common Button Styles */
+button {
+    cursor: pointer;
+}
+
+/* Gender Button Styling */
+.gender-button {
+    background-color: #ffffff; /* Slightly darker navy */
+    color: #000080;
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    /* padding: 20px; */
+    margin-top: 50px;
+    border-radius: 5px;
+    /* text-align: center; */
+    font-size: 1vw;
+    display: inline;
+    /* margin: 63px; */
+    
+}
+
+.gender-button img {
+    width: 200px;
+    height: 200px;
+    /* margin-right: 100px; */
+    /* vertical-align: middle; */
+    padding: 4px;
+}
+
+/* Gender Button Hover Effect */
+.gender-button:hover {
+    background-color: #9e9e9e; /* Darker navy when hovered */
+}
+
+/* Level Button Styling */
+.level-button {
+    background-color: #000080; /* Grayish blue */
+    color: white;
+    width: 220px;
+    height: 220px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.level-button:hover {
+    background-color: #9e9e9e; /* Slightly darker grayish blue */
+    color: #000080;
+    font-weight: bold;
+}
+
+/* Workout Button Styling */
+.workout-button {
+    background-color: #000080; /* Lighter grayish blue */
+    color: white;
+    width: 220px;
+    height: 220px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.workout-button:hover {
+    background-color: #9e9e9e; /* Darker grayish blue */
+    color: #000080;
+    font-weight: bold;
+}
+
+/* Workout Guide Page Styling */
+#workout-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling for workout description */
+#workout-description {
+    font-size: 16px;
+    color: #444; /* Dark gray for description text */
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Formatted Image and Description for workout page */
+#guide-page img {
+    margin-top: 20px;
+}
+
+/* Footer or additional spacing at the bottom */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
